@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Katana;
+    src: url(fuentes/Katanf.ttf);
+}
+@font-face {
+    font-family: Creme;
+    src: url(fuentes/Creme.ttf);
+}
+body{
+    background-image: url("https://c.tenor.com/L0k1211SDnoAAAAd/cherry-blossoms-japan.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/*Header*/
+header{
+    display: flex;
+    background-color: rgb(241, 78, 105);
+    border: 3px solid white;
+    box-shadow: 5px 0 10px black;
+}
+.menu{
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    border-bottom: 1px; 
+}
+.Lista{
+    display: flex;
+    list-style: none;
+}
+.Lista li{
+    margin: 0 5px;
+}
+.Lista a{
+    padding: 7px 13px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Katana;
+    display: block;
+    padding-top: 50px;
+}
+.Lista a:hover, a:active{
+    color: rgb(241, 78, 105);
+    background-color: white;
+    font-size: 23px;
+}
+.Logo{
+    width: 100px;
+    height: 100px;
+}
+/*Fin Header*/
+/*Main*/
+.Carrousel{
+    justify-content: center;
+    padding-top: 100px;
+}
+.Texto{
+    background-color: rgb(26, 241, 248);
+}
+.info{
+    padding: 10% 10%;
+    text-align: center;
+}
+.info p{
+    font-size: 50px;
+    font-family: Creme;
+}
+#Saludo{
+    text-align: center;
+}
+#Rombo{
+    width: 100px;
+    height: 100px;
+}
+/*Fin - Main*/
+/*Footer*/
+footer{
+    display: flex;
+    background-color: rgb(241, 78, 105);
+    border: 3px solid white;
+    color: white;
+    box-shadow: 5px 0 10px black;
+    width: 100%;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+#Guia{
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: Katana;
+}
+.Redes li{
+    list-style: none;
+}
+.Redes li a{
+    display: flex;
+    padding: 15px;
+}
+.Redes img{
+    width: 50px;
+    height: 50px;
+}
+.Logo-inf{
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+}
+/*Fin Footer*/
+/*Media*/
+@media screen and (max-width: 952px){
+    .Logo{
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    .Lista li a{
+        font-size: 5px;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    .info p{
+        font-size: 15px;
+    }
+    #Saludo{
+        font-size: 15px;
+    }
+    #Rombo{
+        width: 50px;
+        height: 50px;
+    }
+    #Guia{
+        font-size: 19px;
+        padding-top: 50px;
+    }
+    .Redes img{
+        width: 30px;
+        height: 30px;
+    }
+    .Logo-inf{
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    }
+    footer{
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 850px){
+    .Lista li a{
+        font-size: 16px;
+    }
+
+}

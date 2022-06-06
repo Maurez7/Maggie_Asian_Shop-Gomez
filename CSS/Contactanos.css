@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: Katana;
+    src: url(fuentes/Katanf.ttf);
+}
+@font-face {
+    font-family: Creme;
+    src: url(fuentes/Creme.ttf);
+}
+body {
+    background-image: url(https://data.whicdn.com/images/269205337/original.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*Header*/
+header{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(252, 214, 0);
+    box-shadow: 5px 0 10px black;
+}
+.menu{
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    border-bottom: 1px; 
+}
+.Lista{
+    display: flex;
+    list-style: none;
+}
+.Lista li{
+    margin: 0 5px;
+}
+.Lista a{
+    padding: 7px 13px;
+    text-decoration: none;
+    color: rgb(185, 142, 0);
+    font-size: 18px;
+    font-family: Katana;
+    display: block;
+    padding-top: 50px;
+}
+.Lista a:hover, a:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 176, 0);
+    font-size: 23px;
+}
+.Logo{
+    width: 100px;
+    height: 100px;
+}
+/*Fin Header*/
+/*Main*/
+.pMain{
+    background-color: goldenrod;
+    color: white;
+    font-size: 37.5px;
+    font-family: Creme;
+    text-align: justify;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Formulario ul li{
+    list-style: none;  
+}
+.Formulario div{
+    margin: auto;
+    border: 1px solid gold;
+}
+.Paises{
+    display: grid;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px
+}
+/*Paises*/
+#Japon{
+    background-image: url(https://static8.depositphotos.com/1020341/1022/i/450/depositphotos_10222697-stock-photo-japan-waving-flag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Japon:hover{
+    background-image: url(https://i.pinimg.com/originals/58/5b/df/585bdf274d05af78cbeaf06c1abbdd54.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#China{
+    background-image: url(https://astelus.com/wp-content/viajes/Por-qu%C3%A9-es-roja-la-bandera-de-China.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#China:hover{
+    background-image: url(https://c.tenor.com/BJTR4GOgRlUAAAAC/shanghai-crowd.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Korea{
+    background-image: url(https://img.freepik.com/foto-gratis/bandera-corea-sur-ondeando-bandera-corea-sur-ilustracion-3d_526955-264.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Korea:hover{
+    background-image: url(https://pa1.narvii.com/6566/1d7a4d554583f6af46702cfefbfee2657e0a0a3a_hq.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Tailandia{
+    background-image: url(https://media.istockphoto.com/photos/thailands-national-flag-close-up-picture-id495632219?k=20&m=495632219&s=612x612&w=0&h=EvQSK3L9dc7Pcdtk5_I8xJDOJuQ8gBll_IlVDLurvV4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Tailandia:hover{
+    background-image: url(https://c.tenor.com/QB2GC-Slr88AAAAC/thailand.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Filipina{
+    background-image: url(https://imagenesnoticias.com/wp-content/uploads/2021/11/bandera-de-Filipinas-actual-700x394.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Filipina:hover{
+    background-image: url(https://c.tenor.com/gUHm0nqz6_QAAAAd/sunset-philippines.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Taiwan{
+    background-image: url(https://st4.depositphotos.com/2397649/38942/i/600/depositphotos_389420512-stock-photo-realistic-flag-of-taiwan-3d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Taiwan:hover{
+    background-image: url(https://c.tenor.com/COhdMnE3iNUAAAAC/%E5%8F%B0%E7%81%A3%E8%87%BA%E7%81%A3taiwan.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Fin Paises*/
+/*Fin-Main*/
+/*Footer*/
+footer{
+    display: flex;
+    background-color: white;
+    border: 3px solid rgb(230, 176, 0);
+    color: rgb(230, 176, 0);
+    box-shadow: 5px 0 10px black;
+    width: 100%;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+#Guia{
+    padding-top: 100px;
+    font-size: 50px;
+    font-family: Katana;
+}
+.Redes li{
+    list-style: none;
+}
+.Redes li a{
+    display: flex;
+    padding: 15px;
+}
+.Redes img{
+    width: 50px;
+    height: 50px;
+}
+.Logo-inf{
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+}
+/*Fin Footer*/
+@media screen and (max-width: 952px){
+    .Logo{
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    .Lista li a{
+        font-size: 5px;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    .pMain{
+        font-size: 18.75px;
+    }
+    iframe{
+        width: 20%;
+        height: 100%;
+    }
+    .Paises{
+        display: grid;
+        grid-template-rows: 130px 130px 130px;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        gap: 14px
+    }
+    .Redes img{
+        width: 30px;
+        height: 30px;
+    }
+    .Logo-inf{
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    }
+    footer{
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 850px){
+    .Lista li a{
+        font-size: 16px;
+    }
+    
+}
