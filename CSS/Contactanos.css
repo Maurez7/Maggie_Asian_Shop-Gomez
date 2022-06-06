@@ -182,17 +182,21 @@ footer{
     padding-top: 50px;
 }
 /*Fin Footer*/
+/*Media Queris*/
 @media screen and (max-width: 952px){
+    /*Header*/
     .Logo{
         width: 50px;
         height: 50px;
         padding-top: 10px;
     }
     .Lista li a{
-        font-size: 5px;
+        font-size: 15px;
         justify-content: center;
         padding-top: 25px;
     }
+    /*Fin Header*/
+    /*Main*/
     .pMain{
         font-size: 18.75px;
     }
@@ -206,6 +210,12 @@ footer{
         grid-template-columns: 0.5fr 0.5fr 0.5fr;
         gap: 14px
     }
+    /*Fin Main*/
+    /*Footer*/
+    #Guia{
+        font-size: 16px;
+        padding-top: 50px;
+    }
     .Redes img{
         width: 30px;
         height: 30px;
@@ -218,10 +228,6 @@ footer{
     footer{
         padding-bottom: 15px;
     }
+    /*Footer*/
 }
-@media screen and (max-width: 850px){
-    .Lista li a{
-        font-size: 16px;
-    }
-    
-}
+/*Fin Media Queris*/
