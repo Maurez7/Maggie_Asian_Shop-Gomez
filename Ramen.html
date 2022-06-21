@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maggie Asian Shop Ramen o Sopa de Fideos aca tenemos varias marcas de sopas instantaneas y en sobres">
+    <meta keywords="Maggie Asian Shop" content="Maggie Asian Shop Ramen Sopa de Fideos Japonesa Comida China Maruchan Fideos Intantaneos Fideos en Copa">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Ramen: Catalogo</title>
     <link rel="stylesheet" href="CSS/Ramen.css">
 </head>
 <body>
     <!-- Header -->
-  <header>
-    <label for=""><img class="Logo" src="multimedia/maggiepng2.png" alt=""></label>
-      <nav class="menu">
+    <header class="shadow">
+      <nav>
+      <a href=""><img id="Logo" src="multimedia/maggiepng2.png" alt=""></a>
+      <button class="toggle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg></button>
         <ul class="Lista">
           <li><a href="C:\Users\mauro\Documents\Programacion\HTML\TareasCoderhouse.html\9. Segunda Entrega del Proyecto\index.html">PRINCIPAL</a></li>
           <li><a href="C:\Users\mauro\Documents\Programacion\HTML\TareasCoderhouse.html\9. Segunda Entrega del Proyecto\Contactanos.html">CONTACTANOS</a></li>
@@ -22,34 +27,34 @@
           <li><a href="C:\Users\mauro\Documents\Programacion\HTML\TareasCoderhouse.html\9. Segunda Entrega del Proyecto\Snacks.html">SNACKS</a></li>
         </ul>
       </nav>
-  </header>
-  <!-- Fin - Header -->
+    </header>
+    <!-- Fin Header -->
   <!-- Main -->
   <main>
     <section class="Productos">
       <table>
-        <tr class="images-prod">
+        <tr class="item">
           <td><img src="multimedia/Sobre MAruchan Pollo.jfif" alt=""></td>
           <td><img src="multimedia/Sobre Maruchan Carne.jfif" alt=""></td>
           <td><img src="multimedia/Sobre Maruchan Camaron.jfif" alt=""></td>
           <td><img src="multimedia/Samyang jjajang.jfif" alt=""></td>
           <td><img src="multimedia/samyang Carbonara.jfif" alt=""></td>
         </tr>
-        <tr class="productos">
+        <tr class="productos-nom">
           <td>SOBRE MARUCHAN POLLO</td>
           <td>SOBRE MARUCHAN CARNE</td>
           <td>SOBRE MARUCHAN CAMARON</td>
           <td>SAMYANG JJAJANG</td>
           <td>SAMYANG CARBONARA</td>
         </tr>
-        <tr class="images-prod">
+        <tr class="item">
           <td><img src="multimedia/Copa Ramen Shin.jfif" alt=""></td>
           <td><img src="multimedia/Copa yuk jang.jfif" alt=""></td>
           <td><img src="multimedia/Copa Nissin Pollo.jfif" alt=""></td>
           <td><img src="multimedia/Copa Nissin Carne.jfif" alt=""></td>
           <td><img src="multimedia/Copa Nissin Verduras.jfif" alt=""></td>
         </tr>
-        <tr class="productos">
+        <tr class="productos-nom">
           <td>COPA SHIN PICANTE</td>
           <td>COPA YUK JANG</td>
           <td>COPA NISSIN POLLO</td>
@@ -59,7 +64,7 @@
       </table>
     </section>
     <section class="card-item">
-      <div class="card text-center w-100 h-100" style="width: 18rem;">
+      <div class="card text-center w-50 h-50" style="width: 18rem;">
         <img src="https://static-sevilla.abc.es/media/gurmesevilla/2020/04/ramen-pollo1920.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">¿Que es Ramen?</h5>
@@ -69,21 +74,17 @@
     </section>
   </main>
   <!-- Fin - Main -->
-  <!-- Footer -->
-  <footer>  
-    <ul>
-      <img class="Logo-inf" src="multimedia/Ramenlogo.png" alt="">
-    </ul>
-    <ul id="Guia">
-      <p>SIGUENOS EN NUESTRAS REDES SOCIALES</p>
-    </ul>
-    <ul class="Redes">    
-      <li><a href="https://es-la.facebook.com/maggieasianshop/"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt=""></a></li>
-      <li><a href="https://www.instagram.com/maggieasianshop4/"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt=""></a></li>
-      <li><a href="https://wa.link/7d4g0s"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png" alt=""></a></li>
-    </ul>
-  </footer>
-  <!-- Fin - Footer -->
+<!-- Footer -->
+<footer class="shadow"> 
+  <img class="Logo-inf" src="multimedia/Ramenlogo.png" alt="">
+  <p>SIGUENOS EN NUESTRAS REDES SOCIALES</p>
+<ul>    
+  <li><a href="https://es-la.facebook.com/maggieasianshop/"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt=""></a></li>
+  <li><a href="https://www.instagram.com/maggieasianshop4/"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" alt=""></a></li>
+  <li><a href="https://wa.link/7d4g0s"><img class="Redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Whatsapp_logo_svg.png/600px-Whatsapp_logo_svg.png" alt=""></a></li>
+</ul>
+</footer>
+<!-- Footer -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+$Estilos:(
+    Blanco: white,
+    Dorado: gold,
+);
+@mixin Fondo() {
+    background-image: url(https://data.whicdn.com/images/269205337/original.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body {
+    @include Fondo();
+}
+/*Header*/
+header {
+    background-color: map-get($Estilos, Dorado);
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    #Logo {
+        width: 80px;
+        height: 80px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        max-width: 992px;
+        margin: 0 auto;
+        .toggle{
+            width: 40px;
+            height: 40px;
+            color: map-get($Estilos, Blanco);
+            background: none;
+            border: none;
+            font-size: 30px;
+            padding: 0 10px;
+            line-height: 30px;
+            display: none;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            margin-right: 40px;
+            li{
+                line-height: 80px;
+                padding: 0 15px;
+                text-transform: uppercase;
+                width: max-content;
+                a{
+                    font-family: Katana;
+                    font-size: 20px;
+                    text-shadow: 0.1em 0.1em #333;
+                    text-decoration: none;
+                    color: map-get($Estilos, Blanco);
+                    border-radius: 3px;
+                }
+                a:hover{
+                    background-color: map-get($Estilos, Blanco);
+                    color: map-get($Estilos, Dorado);
+                }
+            }
+        }
+    }
+}
+/*Fin Header*/
+/*Aside*/
+    aside{
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        ul{
+            li{
+                list-style: none;  
+            }
+        }
+    div{
+        margin: auto;
+        border: 1px solid map-get($Estilos, Dorado);
+}
+/* Fin - Aside */
+/*Main*/
+main{
+    padding-top: 100px;
+article{
+.Ubicacion{
+    width: 70%;
+    margin: 0 auto;
+    iframe{
+        width: 100%;
+    }
+}
+.Paises{
+    padding-top: 100px;
+    display: grid;
+    grid-template-rows: 280px 280px 280px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px
+}
+    .Japon{
+        background-image: url(https://static8.depositphotos.com/1020341/1022/i/450/depositphotos_10222697-stock-photo-japan-waving-flag.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Japon:hover{
+        background-image: url(https://i.pinimg.com/originals/58/5b/df/585bdf274d05af78cbeaf06c1abbdd54.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .China{
+        background-image: url(https://astelus.com/wp-content/viajes/Por-qu%C3%A9-es-roja-la-bandera-de-China.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .China:hover{
+        background-image: url(https://c.tenor.com/BJTR4GOgRlUAAAAC/shanghai-crowd.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Korea{
+        background-image: url(https://img.freepik.com/foto-gratis/bandera-corea-sur-ondeando-bandera-corea-sur-ilustracion-3d_526955-264.jpg?w=2000);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Korea:hover{
+        background-image: url(https://pa1.narvii.com/6566/1d7a4d554583f6af46702cfefbfee2657e0a0a3a_hq.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Tailandia{
+        background-image: url(https://media.istockphoto.com/photos/thailands-national-flag-close-up-picture-id495632219?k=20&m=495632219&s=612x612&w=0&h=EvQSK3L9dc7Pcdtk5_I8xJDOJuQ8gBll_IlVDLurvV4=);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .Tailandia:hover{
+        background-image: url(https://c.tenor.com/QB2GC-Slr88AAAAC/thailand.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .Filipina{
+        background-image: url(https://imagenesnoticias.com/wp-content/uploads/2021/11/bandera-de-Filipinas-actual-700x394.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .Filipina:hover{
+        background-image: url(https://c.tenor.com/gUHm0nqz6_QAAAAd/sunset-philippines.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .Taiwan{
+        background-image: url(https://st4.depositphotos.com/2397649/38942/i/600/depositphotos_389420512-stock-photo-realistic-flag-of-taiwan-3d.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .Taiwan:hover{
+        background-image: url(https://c.tenor.com/COhdMnE3iNUAAAAC/%E5%8F%B0%E7%81%A3%E8%87%BA%E7%81%A3taiwan.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+            }
+    }
+}
+/*Fin-Main*/
+/* Footer */
+footer{
+    background-color: map-get($Estilos, Dorado);
+    color: map-get($Estilos, Blanco);
+    display: flex;
+    justify-content: space-around;
+    p{
+        font-family: Katana;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        li{
+            text-shadow: 0.1em 0.1em #333;
+            text-align: center;
+            list-style: none;
+            padding: 0 10px;
+        }
+    }
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+/*Fin - Footer*/
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        height: 60px;
+        #Logo {
+            width: 60px;
+            height: 60px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            max-width: 992px;
+            margin: 0 auto;
+            background-color: map-get($Estilos, Blanco);
+            ul{
+                padding-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                left: 0;
+                top: 60px;
+                width: 100%;
+                padding: 20px 0;
+                li{
+                    a{
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: map-get($Estilos, Blanco);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    /* Fin Header */
+    /* Aside */
+    aside{
+        padding-top: 500px;
+        margin: 0 auto;
+        padding-right: 300px;
+    }
+    /* Fin Aside */
+    /* Main */
+    main{
+    padding-top: 100px;
+        article{
+            .Ubicacion{
+            width: 70%;
+            justify-content: center;
+                iframe{
+                    width: 100%;
+                }
+            }
+        .Paises{
+                padding-top: 100px;
+                display: grid;
+                grid-template-rows: 200px 200px 200px;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 14px
+                }
+            }
+        }
+    /* Fin Main */
+    /* Footer */
+    footer{
+        .Siguenos{            
+            font-size: 15px;
+            padding-left: 100px;
+        }
+        ul{
+            li{
+                img{
+                    width: 25px;
+                    height: 25px;
+                    }
+                }
+            }
+        }
+    /* Fin Footer*/
+    }
+@media (max-width: 494px) {
+    header {
+        height: 60px;
+        #Logo {
+            width: 60px;
+            height: 60px;
+        }
+        nav{
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: map-get($Estilos, Dorado);
+            ul{
+                padding-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    a{
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: map-get($Estilos, Blanco);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        padding-top: 500px;
+        margin: 0 auto;
+        padding-right: 280px;
+    }
+    main{
+        padding-top: 100px;
+            article{
+                .Ubicacion{
+                    height: 100%;
+                    width: 100%;
+                    iframe{
+                        width: 50%;
+                    }
+                }
+            .Paises{
+                    padding-top: 100px;
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 14px
+                    }
+                }
+            }
+    footer{
+        .Logo-inf{
+            padding-top: 10px;
+            width: 15px;
+            height: 15px;
+        }
+        .Siguenos{            
+            font-size: 15px;
+            padding-left: 50px;
+        }
+        ul{
+            li{
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    header {
+        height: 60px;
+        #Logo {
+            width: 60px;
+            height: 60px;
+        }
+        nav{
+            max-width: 992px;
+            background-color: map-get($Estilos, Dorado);
+            ul{
+                padding-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    line-height: 80px;
+                    padding: 0 10px;
+                    text-transform: uppercase;
+                    width: max-content;
+                    a{
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: map-get($Estilos, Blanco);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        padding-top: 500px;
+        margin: 0 auto;
+        padding-right: 280px;
+    }
+    main{
+        padding-top: 100px;
+            article{
+                .Ubicacion{
+                    height: 100%;
+                    width: 100%;
+                    iframe{
+                        width: 50%;
+                    }
+                }
+            .Paises{
+                    padding-top: 100px;
+                    display: grid;
+                    grid-template-rows: 100px 100px 100px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 14px
+                    }
+                }
+            }
+    footer{
+        .Logo-inf{
+            width: 12px;
+            height: 12px;
+        }
+        .Siguenos{            
+            font-size: 10px;
+            padding-left: 50px;
+        }
+        ul{
+            li{
+                img{
+                    width: 12px;
+                    height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
