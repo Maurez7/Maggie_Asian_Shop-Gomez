@@ -3,382 +3,299 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: Katana;
+  src: url(CSS/Fuentes/Katanf.ttf);
+}
 body {
   background-image: url(https://data.whicdn.com/images/269205337/original.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-/*Header*/
-header {
-  background-color: gold;
-  width: 100%;
-  height: 80px;
-  top: 0;
-  left: 0;
-}
-header #Logo {
-  width: 80px;
-  height: 80px;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 992px;
-  margin: 0 auto;
-}
-header nav .toggle {
-  width: 40px;
-  height: 40px;
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 10px;
-  line-height: 30px;
-  display: none;
-}
-header nav ul {
-  display: flex;
-  list-style: none;
-  margin-right: 40px;
-}
-header nav ul li {
-  line-height: 80px;
-  padding: 0 15px;
-  text-transform: uppercase;
-  width: max-content;
-}
-header nav ul li a {
-  font-family: Katana;
-  font-size: 20px;
-  text-shadow: 0.1em 0.1em #333;
-  text-decoration: none;
-  color: white;
-  border-radius: 3px;
-}
-header nav ul li a:hover {
-  background-color: white;
-  color: gold;
-}
-
-/*Fin Header*/
-/*Aside*/
-aside {
-  width: 30%;
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-  padding-top: 100px;
-  padding-bottom: 10px;
-  /* Fin - Aside */
+  /*Header*/
+  /*Fin Header*/
   /*Main*/
   /*Fin-Main*/
   /* Footer */
-  /*Fin - Footer*/
 }
-aside ul li {
+body header {
+  width: auto;
+  background-color: gold;
+  box-shadow: 5px 5px 40px;
+}
+body header nav ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
 }
-aside div {
-  margin: auto;
-  border: 1px solid gold;
+body header nav ul li {
+  padding: 0 15px;
 }
-aside main {
+body header nav ul li a {
+  font-family: Katana;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+  text-decoration: none;
+}
+body header nav ul li a img {
+  width: 80px;
+  height: 80px;
+}
+body header nav ul li:hover {
+  background-color: white;
+}
+body header nav ul li:hover a {
+  color: gold;
+}
+body header nav ul .Secciones {
+  margin-top: 25px;
+}
+body main {
   padding-top: 100px;
 }
-aside main article .Ubicacion {
-  width: 70%;
-  margin: 0 auto;
+body main article .Ubicacion div {
+  display: flex;
+  justify-content: center;
 }
-aside main article .Ubicacion iframe {
-  width: 100%;
-}
-aside main article .Paises {
+body main article .Paises {
   padding-top: 100px;
   display: grid;
-  grid-template-rows: 280px 280px 280px;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 14px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-auto-rows: 13rem;
+  gap: 80px;
 }
-aside main article .Japon {
+body main article .Paises .Japon {
   background-image: url(https://static8.depositphotos.com/1020341/1022/i/450/depositphotos_10222697-stock-photo-japan-waving-flag.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Japon:hover {
+body main article .Paises .Japon:hover {
   background-image: url(https://i.pinimg.com/originals/58/5b/df/585bdf274d05af78cbeaf06c1abbdd54.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .China {
+body main article .Paises .China {
   background-image: url(https://astelus.com/wp-content/viajes/Por-qu%C3%A9-es-roja-la-bandera-de-China.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .China:hover {
+body main article .Paises .China:hover {
   background-image: url(https://c.tenor.com/BJTR4GOgRlUAAAAC/shanghai-crowd.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Korea {
+body main article .Paises .Korea {
   background-image: url(https://img.freepik.com/foto-gratis/bandera-corea-sur-ondeando-bandera-corea-sur-ilustracion-3d_526955-264.jpg?w=2000);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Korea:hover {
+body main article .Paises .Korea:hover {
   background-image: url(https://pa1.narvii.com/6566/1d7a4d554583f6af46702cfefbfee2657e0a0a3a_hq.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Tailandia {
+body main article .Paises .Tailandia {
   background-image: url(https://media.istockphoto.com/photos/thailands-national-flag-close-up-picture-id495632219?k=20&m=495632219&s=612x612&w=0&h=EvQSK3L9dc7Pcdtk5_I8xJDOJuQ8gBll_IlVDLurvV4=);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Tailandia:hover {
+body main article .Paises .Tailandia:hover {
   background-image: url(https://c.tenor.com/QB2GC-Slr88AAAAC/thailand.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Filipina {
+body main article .Paises .Filipina {
   background-image: url(https://imagenesnoticias.com/wp-content/uploads/2021/11/bandera-de-Filipinas-actual-700x394.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Filipina:hover {
+body main article .Paises .Filipina:hover {
   background-image: url(https://c.tenor.com/gUHm0nqz6_QAAAAd/sunset-philippines.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Taiwan {
+body main article .Paises .Taiwan {
   background-image: url(https://st4.depositphotos.com/2397649/38942/i/600/depositphotos_389420512-stock-photo-realistic-flag-of-taiwan-3d.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside main article .Taiwan:hover {
+body main article .Paises .Taiwan:hover {
   background-image: url(https://c.tenor.com/COhdMnE3iNUAAAAC/%E5%8F%B0%E7%81%A3%E8%87%BA%E7%81%A3taiwan.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-aside footer {
+body main article .Formulario {
+  padding: 200px 0;
+}
+body main article .Formulario .card {
+  margin: 0 auto;
+}
+body main article .Formulario .card .card-body {
   background-color: gold;
+}
+body main article .Formulario .card .card-body h5 {
+  text-align: center;
   color: white;
-  display: flex;
-  justify-content: space-around;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
-aside footer p {
-  font-family: Katana;
+body main article .Formulario .card .card-body form ul {
+  list-style: none;
 }
-aside footer ul {
+body main article .Formulario .card .card-body form ul li {
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+body footer {
+  height: 75px;
+  background-color: gold;
+}
+body footer ul {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
-aside footer ul li {
-  text-shadow: 0.1em 0.1em #333;
-  text-align: center;
+body footer ul li {
   list-style: none;
-  padding: 0 10px;
+  padding: 0 30px;
 }
-aside footer img {
+body footer ul li a #Facebook {
+  margin-top: 18px;
   width: 40px;
   height: 40px;
 }
-@media (max-width: 768px) {
-  aside {
-    /* Header */
-    /* Fin Header */
-    /* Aside */
-    /* Fin Aside */
-    /* Main */
-    /* Fin Main */
-    /* Footer */
-    /* Fin Footer*/
+body footer ul li a #Instagram {
+  margin-top: 16px;
+  width: 50px;
+  height: 50px;
+}
+body footer ul li a #Whatsapp {
+  margin-top: 9px;
+  width: 60px;
+  height: 60px;
+}
+
+/*Fin - Footer*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header nav ul li {
+    margin-bottom: 25px;
   }
-  aside header {
-    height: 60px;
+  header nav ul li a {
+    font-size: 5.9px;
+    font-family: Katana;
   }
-  aside header #Logo {
-    width: 60px;
-    height: 60px;
+  header nav ul li a img {
+    margin-top: 25px;
+    max-width: 30px;
+    max-height: 30px;
   }
-  aside header nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-    margin: 0 auto;
-    background-color: white;
+  main {
+    padding: 0;
   }
-  aside header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
+  main article .Paises {
+    grid-auto-columns: auto;
   }
-  aside header nav ul li a {
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
+  footer {
+    max-height: 75px;
   }
-  aside aside {
-    padding-top: 500px;
-    margin: 0 auto;
-    padding-right: 300px;
+  footer ul li a #Facebook {
+    max-width: 25px;
+    max-height: 25px;
   }
-  aside main {
-    padding-top: 100px;
+  footer ul li a #Instagram {
+    max-width: 30px;
+    max-height: 30px;
   }
-  aside main article .Ubicacion {
-    width: 70%;
-    justify-content: center;
-  }
-  aside main article .Ubicacion iframe {
-    width: 100%;
-  }
-  aside main article .Paises {
-    padding-top: 100px;
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 14px;
-  }
-  aside footer .Siguenos {
-    font-size: 15px;
-    padding-left: 100px;
-  }
-  aside footer ul li img {
-    width: 25px;
-    height: 25px;
+  footer ul li a #Whatsapp {
+    max-width: 45px;
+    max-height: 45px;
   }
 }
-@media (max-width: 494px) {
-  aside header {
-    height: 60px;
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  header nav ul li {
+    margin-bottom: 25px;
   }
-  aside header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  aside header nav {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: gold;
-  }
-  aside header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  aside header nav ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-  }
-  aside aside {
-    padding-top: 500px;
-    margin: 0 auto;
-    padding-right: 280px;
-  }
-  aside main {
-    padding-top: 100px;
-  }
-  aside main article .Ubicacion {
-    height: 100%;
-    width: 100%;
-  }
-  aside main article .Ubicacion iframe {
-    width: 50%;
-  }
-  aside main article .Paises {
-    padding-top: 100px;
-    display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 14px;
-  }
-  aside footer .Logo-inf {
-    padding-top: 10px;
-    width: 15px;
-    height: 15px;
-  }
-  aside footer .Siguenos {
-    font-size: 15px;
-    padding-left: 50px;
-  }
-  aside footer ul li img {
-    width: 15px;
-    height: 15px;
-  }
-}
-@media (max-width: 375px) {
-  aside header {
-    height: 60px;
-  }
-  aside header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  aside header nav {
-    max-width: 992px;
-    background-color: gold;
-  }
-  aside header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  aside header nav ul li {
-    line-height: 80px;
-    padding: 0 10px;
-    text-transform: uppercase;
-    width: max-content;
-  }
-  aside header nav ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-  }
-  aside aside {
-    padding-top: 500px;
-    margin: 0 auto;
-    padding-right: 280px;
-  }
-  aside main {
-    padding-top: 100px;
-  }
-  aside main article .Ubicacion {
-    height: 100%;
-    width: 100%;
-  }
-  aside main article .Ubicacion iframe {
-    width: 50%;
-  }
-  aside main article .Paises {
-    padding-top: 100px;
-    display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 14px;
-  }
-  aside footer .Logo-inf {
-    width: 12px;
-    height: 12px;
-  }
-  aside footer .Siguenos {
+  header nav ul li a {
+    font-family: Katana;
     font-size: 10px;
-    padding-left: 50px;
   }
-  aside footer ul li img {
-    width: 12px;
-    height: 12px;
+  header nav ul li a img {
+    margin-top: 15px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  footer ul li a #Instagram {
+    max-width: 60px;
+    max-height: 60px;
+  }
+  footer ul li a #Whatsapp {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  header nav ul li {
+    font-family: Katana;
+    margin-bottom: 5px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  header nav ul li a img {
+    margin-top: 5px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  footer ul li a #Instagram {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  footer ul li a #Whatsapp {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1285px) {
+  header nav ul li {
+    font-family: Katana;
+    margin-bottom: 5px;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  header nav ul li a img {
+    margin-top: 5px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    max-width: 90px;
+    max-height: 90px;
+  }
+  footer ul li a #Instagram {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  footer ul li a #Whatsapp {
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 

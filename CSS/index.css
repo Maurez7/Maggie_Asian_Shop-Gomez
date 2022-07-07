@@ -12,341 +12,213 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /*Header*/
+  /*Fin Header*/
+  /*Main*/
+  /*F in - Main*/
+  /* Footer */
 }
 body header {
+  width: auto;
   background-color: pink;
-  width: 100%;
-  height: 80px;
-  top: 0;
-  left: 0;
-}
-body header #Logo {
-  width: 80px;
-  height: 80px;
-}
-body header nav {
-  display: flex;
-  justify-content: space-between;
-  max-width: 992px;
-  margin: 0 auto;
-}
-body header nav .toggle {
-  width: 40px;
-  height: 40px;
-  color: white;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 10px;
-  line-height: 30px;
-  display: none;
+  box-shadow: 5px 5px 40px;
 }
 body header nav ul {
-  display: flex;
   list-style: none;
-  margin-right: 40px;
-}
-body header nav ul li {
-  line-height: 80px;
-  padding: 0 15px;
-  text-transform: uppercase;
-  width: max-content;
-}
-body header nav ul li a {
-  font-family: Katana;
-  font-size: 20px;
-  text-shadow: 0.1em 0.1em #333;
-  text-decoration: none;
-  color: white;
-  border-radius: 3px;
-}
-body header nav ul li a:hover {
-  background-color: white;
-  color: pink;
-}
-body main article {
-  padding: 100px 0;
-}
-body main article .Info {
-  background-color: aqua;
-  color: white;
-  border: 3px solid orange;
-}
-body main article .Info h4 {
-  font-family: Katana;
-  text-align: center;
-  padding-top: 20px;
-  text-shadow: 0.1em 0.1em #333;
-}
-body main article .Info p {
-  font-family: Katana;
-  padding-top: 40px;
-  text-align: center;
-  text-shadow: 0.1em 0.1em #333;
-}
-body main article .Carrousel {
-  padding-top: 100px;
-}
-body main article .Carrousel .c1l h5 {
-  color: black;
-}
-body main article .Carrousel .c1l p {
-  color: black;
-}
-body main article .Carrousel .c2l h5 {
-  color: white;
-}
-body main article .Carrousel .c2l p {
-  color: white;
-}
-body main article .Carrousel .c3l h5 {
-  color: yellow;
-}
-body main article .Carrousel .c3l p {
-  color: yellow;
-}
-
-footer {
-  background-color: pink;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-}
-footer p {
-  font-family: Katana;
-  font-size: 30px;
-  text-shadow: 0.1em 0.1em #333;
-}
-footer ul {
   display: flex;
   flex-direction: row;
 }
-footer ul li {
-  text-shadow: 0.1em 0.1em #333;
-  text-align: center;
-  list-style: none;
-  padding: 0 10px;
+body header nav ul li {
+  padding: 0 15px;
 }
-footer img {
+body header nav ul li a {
+  font-family: Katana;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+  text-decoration: none;
+}
+body header nav ul li a img {
+  width: 80px;
+  height: 80px;
+}
+body header nav ul li:hover {
+  background-color: white;
+}
+body header nav ul li:hover a {
+  color: pink;
+}
+body header nav ul .Secciones {
+  margin-top: 25px;
+}
+body main article .Carrousel {
+  padding: 100px 0;
+  margin: 0 auto;
+}
+body main article .Carrousel div h5 {
+  font-family: Katana;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+}
+body main article .Carrousel div p {
+  font-family: Katana;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+}
+body main article .Info {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+body main article .Info img {
+  width: 50%;
+  height: 100%;
+}
+body footer {
+  height: 75px;
+  background-color: pink;
+}
+body footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body footer ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+body footer ul li a #Facebook {
+  margin-top: 18px;
   width: 40px;
   height: 40px;
 }
+body footer ul li a #Instagram {
+  margin-top: 14px;
+  width: 70px;
+  height: 50px;
+}
+body footer ul li a #Whatsapp {
+  margin-top: 9px;
+  width: 60px;
+  height: 60px;
+}
 
-@media (max-width: 1024px) {
-  header {
-    width: 100%;
-  }
-  header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  header nav {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  header nav .toggle {
-    width: 40px;
-    height: 40px;
-  }
-  main main article {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    display: flex;
-    flex-direction: row;
-  }
-  main main article .info {
-    border: 3px solid orange;
-    background-color: aqua;
-  }
-  main main article .info h4 {
-    font-family: Katana;
-    text-align: center;
-    padding-top: 20px;
-  }
-  main main article .info p {
-    font-family: Katana;
-    padding-top: 40px;
-    text-align: center;
-  }
-}
-@media (max-width: 820px) {
-  header {
-    width: 100%;
-  }
-  header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  header nav .toggle {
-    width: 40px;
-    height: 40px;
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 10px;
-    line-height: 30px;
-    display: none;
-  }
-  header nav .toggle ul {
-    display: flex;
-    list-style: none;
-    margin-right: 40px;
-  }
-  header nav .toggle ul li {
-    line-height: 80px;
-    padding: 0 15px;
-    text-transform: uppercase;
-    width: max-content;
-  }
-  header nav .toggle ul li a {
-    font-family: Katana;
-    font-size: 20px;
-    text-shadow: 0.1em 0.1em #333;
-    text-decoration: none;
-    border-radius: 3px;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    height: 60px;
-  }
-  header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 992px;
-    margin: 0 auto;
-    background-color: pink;
-    height: 450px;
-  }
-  header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-  }
-  header nav ul li a {
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-  }
-  main {
-    padding-top: 450px;
-  }
-  footer .Siguenos {
-    font-size: 15px;
-    padding-left: 100px;
-  }
-  footer ul li img {
-    width: 25px;
-    height: 25px;
-  }
-}
-@media (max-width: 494px) {
-  header {
-    height: 60px;
-  }
-  header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  header nav {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: pink;
-    height: 450px;
-  }
-  header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  header nav ul li a {
-    font-size: 5px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-  }
-  main {
-    padding-top: 450px;
-  }
-  footer p {
-    font-size: 15px;
-  }
-  footer .Logo-inf {
-    padding-top: 10px;
-    width: 15px;
-    height: 15px;
-  }
-  footer .Siguenos {
-    font-size: 15px;
-    padding-left: 50px;
-  }
-  footer ul li img {
-    width: 15px;
-    height: 15px;
-  }
-}
-@media (max-width: 375px) {
-  header {
-    height: 60px;
-  }
-  header #Logo {
-    width: 60px;
-    height: 60px;
-  }
-  header nav {
-    max-width: 992px;
-    background-color: pink;
-    height: 450px;
-  }
-  header nav ul {
-    padding-top: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   header nav ul li {
-    line-height: 80px;
-    padding: 0 10px;
-    text-transform: uppercase;
-    width: max-content;
+    margin-bottom: 25px;
   }
   header nav ul li a {
-    font-size: 5px;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
+    font-size: 5.9px;
+    font-family: Katana;
   }
-  main {
-    padding-top: 400px;
+  header nav ul li a img {
+    margin-top: 25px;
+    max-width: 30px;
+    max-height: 30px;
   }
-  main article .info h4 {
-    font-size: 5px;
+  footer {
+    max-height: 75px;
   }
-  main article .info p {
-    font-size: 5px;
+  footer ul li a #Facebook {
+    margin-bottom: 10px;
+    max-width: 35px;
+    max-height: 35px;
   }
-  footer p {
-    font-size: 10px;
+  footer ul li a #Instagram {
+    margin-bottom: 12px;
+    max-width: 60px;
+    max-height: 42px;
   }
-  footer ul li img {
-    width: 12px;
-    height: 12px;
+  footer ul li a #Whatsapp {
+    margin-top: 10px;
+    max-width: 55px;
+    max-height: 55px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  header nav {
+    padding-bottom: 25px;
+  }
+  header nav ul li a {
+    font-family: Katana;
+    font-size: 12px;
+  }
+  header nav ul li a img {
+    margin-top: 5px;
+    max-width: 60px;
+    max-height: 60px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    margin-bottom: 10px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+  footer ul li a #Instagram {
+    max-width: 60px;
+    max-height: 45px;
+  }
+  footer ul li a #Whatsapp {
+    margin-top: 10px;
+    max-width: 55px;
+    max-height: 55px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  header nav ul li a {
+    font-family: Katana;
+    font-size: 15px;
+  }
+  header nav ul li a img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    margin-top: 18px;
+    width: 40px;
+    height: 40px;
+  }
+  footer ul li a #Instagram {
+    margin-top: 14px;
+    width: 70px;
+    height: 50px;
+  }
+  footer ul li a #Whatsapp {
+    margin-top: 9px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1285px) {
+  header nav ul li a {
+    font-family: Katana;
+    font-size: 15px;
+  }
+  header nav ul li a img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  footer {
+    max-height: 75px;
+  }
+  footer ul li a #Facebook {
+    margin-top: 18px;
+    width: 40px;
+    height: 40px;
+  }
+  footer ul li a #Instagram {
+    margin-top: 14px;
+    width: 70px;
+    height: 50px;
+  }
+  footer ul li a #Whatsapp {
+    margin-top: 9px;
+    width: 60px;
+    height: 60px;
   }
 }
 
